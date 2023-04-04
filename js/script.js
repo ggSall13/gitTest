@@ -136,3 +136,19 @@ function clock() {
    setTimeout(clock, 1000);
 };
 
+
+// input test
+
+const inputs = document.getElementsByClassName('input');
+const buttonResult = document.querySelector('.result__input');
+const inputResult = document.querySelector('#inputResult');
+
+buttonResult.addEventListener('click',inputsResult);
+
+function inputsResult() {
+   let summInputs = inputs.value;
+   inputResult.value = summInputs;
+};
+
+
+// input test
