@@ -139,21 +139,32 @@ function clock() {
 
 // input test
 
-const inputs = document.getElementsByClassName('input');
-const buttonResult = document.querySelector('.result__input');
+const inputFirst = document.querySelector('#first');
+const inputSec = document.querySelector('#second');
+const inputThird = document.querySelector('#third');
+
+const inputBtn = document.querySelector('.result__input');
+
 const inputResult = document.querySelector('#inputResult');
 
-buttonResult.addEventListener('click',inputsResult);
+inputBtn.onclick = () => {
+   let sum = +inputFirst.value + +inputSec.value + +inputThird.value;
+   inputResult.value = sum;
 
-function inputsResult() {
-   let summInputs = inputs.value;
-   inputResult.value = summInputs;
-};
+   inputFirst.value = '';
+   inputSec.value = '';
+   inputThird.value = '';
+}
+
+
+
+
+
 
 
 const out = document.querySelector('.out');
 
-
+// Таблица
 let sum = '';
 
 for (let i = 1; i <= 9; i++) {
