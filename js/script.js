@@ -151,4 +151,18 @@ function inputsResult() {
 };
 
 
+const out = document.querySelector('.out');
+
+
+let sum = '';
+
+for (let i = 1; i <= 9; i++) {
+   for (let k = 1; k <= 10; k++) {
+      sum += i + ' * ' + k + ' = ' + i * k + '<br>';
+   }
+   sum += '<br>';
+}
+
+out.innerHTML += sum;
+
 // input test
